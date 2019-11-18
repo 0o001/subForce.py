@@ -45,7 +45,7 @@ def main():
                     request = requests.get(checkURL, allow_redirects=False)
 
                     if request:
-                        if url not in subdomains:
+                        if checkURL not in subdomains:
                             subdomains.append(checkURL)
                 except:
                     pass
